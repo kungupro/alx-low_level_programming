@@ -18,13 +18,24 @@ void times_table(void)
 			product = i * j;
 			if (j == 0)
 			{
-				printf("%d", product);
-			}	
+				_putchar('0');
+			}
 			else
 			{
-				printf(", %d", product);
+				_putchar(',');
+				_putchar(' ');
+				if (product <= 9)
+				{
+					_putchar(' ');
+				}
+				_putchar(product / 10 + '0');
+				_putchar(product % 10 + '0');
+
 			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
+
+
 }
+
