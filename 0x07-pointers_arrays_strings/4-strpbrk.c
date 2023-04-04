@@ -22,9 +22,9 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == a[j])
 			{
-				return (s+i);
+				return (s + i);
 			}
 		}
 	}
-	return (s);
+	return (0);
 }
