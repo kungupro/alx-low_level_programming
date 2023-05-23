@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include <fcntl.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -88,7 +90,6 @@ int main(int argc, char *argv[])
 		}
 		bytes_read = read(file_from, buff, 1024);
 
-		file_to = open(argv[2], O_WRONLY | O_APPEND);
 	}
 	while (bytes_read > 0);
 	
