@@ -92,14 +92,13 @@ int main(int argc, char *argv[])
 
 	}
 	while (bytes_read > 0);
-	
-	free(buff);
-	close_file(file_from);
-	close_file(file_to);
-	
+	{
+		free(buff);
+		close_file(file_from);
+		close_file(file_to);
+	}	
+
 	return (0);
-
 }
-
 
 
